@@ -6,7 +6,7 @@ const User = require("../models/User");
 
 router.post("/", async (req, res) => {
   try {
-    const { email, password, role } = req.body;
+    const { name, password, role } = req.body;
 
     if (!email || !password) {
       return res
